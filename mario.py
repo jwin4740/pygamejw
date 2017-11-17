@@ -1,7 +1,9 @@
 import pygame
+import os
+import numpy
 
 # initialize pygame
-x = pygame.init()
+i = pygame.init()
 white = (255, 255, 255)
 black = (0, 0, 0)
 red = (255, 0, 0)
@@ -16,8 +18,17 @@ gameDisplay = pygame.display.set_mode(
 pygame.display.set_caption('PyMario')
 mar = pygame.image.load('marback.jpg').convert()
 mar = pygame.transform.scale(mar, (screen_width, screen_height))
-still_mario = pygame.image.load('mario_still.png').convert()
-running_mario = pygame.image.load('mario_running.png').convert()
+still_mario = pygame.image.load('Mario.jpg')
+# running_mario = pygame.image.load('mario_running.png').convert()
+r = still_mario.get_rect()
+
+print(r)
+
+# def mario(x, y):
+#     gameDisplay.blit(still_mario, (x, y))
+#
+#
+# mario(200, 200)
 gameExit = False
 
 lead_x = 300
