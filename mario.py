@@ -30,7 +30,7 @@ print(r)
 #
 # mario(200, 200)
 gameExit = False
-
+clock = pygame.time.Clock()
 lead_x = 300
 lead_y = 300
 lead_x_change = 0
